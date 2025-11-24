@@ -11,3 +11,6 @@ jobs:
         with:
           path: ~/.npm
           key: buildCache
+      - run: npm test -- --coverage
+        env:
+          CI: true
